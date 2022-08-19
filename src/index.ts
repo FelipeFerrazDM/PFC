@@ -1,3 +1,9 @@
 import { App } from "./app"
 
-new App().server.listen(8080);
+const __PORTA:number = 8080;
+
+new App().server.listen(__PORTA , ()=>{
+
+    console.log(`servidor rodando na porta: ${__PORTA}`);
+
+});
