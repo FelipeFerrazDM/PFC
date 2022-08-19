@@ -1,9 +1,6 @@
 import express from "express";
 import { router } from "./router";
 import { engine } from "express-handlebars";
-import hbshelpers from "handlebars-helpers";
-
-const helpers = hbshelpers();
 export class App {
     public server: express.Application;
 
@@ -20,9 +17,7 @@ export class App {
 
             defaultLayout: 'main',
 
-            extname: '.hbs',
-
-            helpers: helpers,
+            extname: '.hbs'
 
         }));
         this.server.set('view engine', '.hbs');

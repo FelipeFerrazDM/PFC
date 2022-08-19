@@ -1,6 +1,6 @@
 import { App } from "./app"
 
-const __PORTA:number = 8080;
+const __PORTA:number = parseInt(process.env.PORT as string) || 8080;
 
 new App().server.listen(__PORTA , ()=>{
 
