@@ -12,3 +12,28 @@
     transition: 0.5s;
     transform: scale(1.1);
 }
+
+.conteudo {
+    padding-top: 15px;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.titulo {
+    padding: 10px;
+}
+
+.saibamais {
+    padding-top: 30px;
+}
+
+.EduCashOn {
+    padding-top: 20px;
+}
+
+.interrogacao {
+    color: coral;
+    text-decoration: none;
+}
