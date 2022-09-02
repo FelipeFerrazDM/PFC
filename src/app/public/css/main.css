@@ -37,3 +37,29 @@
     color: coral;
     text-decoration: none;
 }
+
+.barra {
+    border-top: 0.4px solid gray;
+}
+
+.afrase {
+    text-align: center;
+    font-size: 40px;
+}
+
+.benjamin {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.bola {
+    border-radius: 100%;
+    background-color: coral;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 45%;
+    font-size: 60px;
+}
