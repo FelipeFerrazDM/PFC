@@ -62,4 +62,9 @@
     height: 100px;
     margin-left: 45%;
     font-size: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.backbola {
+    background: linear-gradient(white 50%, #3C157B 50%);
 }
