@@ -23,6 +23,37 @@
           nele incide juros sobre juros. Para entender melhor, esse juros é conhecido como o juros da bola de neve.
         </p>
       </div>
+      <div class="barra">
+        <h1 class="titulo">Calculadora de Juros</h1>
+        <select class="form-select" id="tipo" aria-label="Default select example">
+          <option value="1" selected>simples</option>
+          <option value="2">composto</option>
+        </select>
+        <div class="mb-3 mt-5 d-flex">
+          <div class="col-sm-10 w-25">
+            <label for="staticEmail" class="-form-label">capital</label>
+            <input type="text" class="form-control" id="capital">
+          </div>
+          <div class="col-sm-10 mx-5 w-25">
+            <label for="staticEmail" class="-form-label">taxa por mês em %</label>
+            <input type="text" class="form-control" id="taxa">
+          </div>
+          <div class="col-sm-10 mx-5 w-25">
+            <label for="staticEmail" class="-form-label">tempo em meses</label>
+            <input type="text" class="form-control" id="tempo">
+          </div>
+        </div>
+        <div class="mb-3 mt-5">
+          <div class="col-sm-10 w-25">
+            <label for="staticEmail" class="form-label">Valor de juros</label>
+            <input type="text" class="form-control" id="juros" disabled>
+          </div>
+          <div class="col-sm-10 w-25 mt-3">
+            <label for="staticEmail" class="form-label">Valor do montante</label>
+            <input type="text" class="form-control" id="montante" disabled>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col">
       <i>
@@ -31,3 +62,5 @@
     </div>
   </div>
 </div>
+
+<script src="/public/js/calculadora.js"></script>

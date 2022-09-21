@@ -19,12 +19,12 @@
 
 .hover:hover {
     background-color: white;
-    text-decoration:dashed;
+    text-decoration: dashed;
     text-decoration-color: #3C157B;
-    color: #3C157B!important;
+    color: #3C157B !important;
     transition: 0.5s;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-    text-shadow:  2px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .conteudo {
@@ -72,19 +72,22 @@
 .bola {
     border-radius: 100%;
     background-color: coral;
-    align-items: flex-end;
     text-align: center;
     width: 100px;
     height: 100px;
-    margin-left: 45%;
-    font-size: 80px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-shadow: 3px 3px black;
-    box-shadow: 1px 10px 7px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aspas {
+    width: 55px;
 }
 
 .backbola {
     background: linear-gradient(white 50%, #3C157B 50%);
+    justify-content: center;
+    display: flex;
 }
 
 .dropdown-menu {
@@ -93,7 +96,7 @@
 }
 
 .voltarinicio {
-    position:fixed;
+    position: fixed;
     border: 5px solid;
     border-color: #3C157B;
     border-radius: 100%;
@@ -111,10 +114,39 @@
 
 .card {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.80);
-    text-align: center;
+    text-align: justify;
     font-size: 15px;
 }
 
 .blocoafrase {
     box-shadow: 1px 10px 7px rgba(0, 0, 0, 0.5);
+}
+
+.Quem_Somos {
+    text-align: center;
+    color: coral;
+    text-shadow: 1.5px 1.5px black;
+}
+
+.card-img-overlay {
+    align-items: center !important;
+}
+
+.card1 {
+    background: linear-gradient(30deg, black, white);
+    border: solid;
+}
+
+.card2 {
+    background: linear-gradient(30deg, black, white);
+    border: solid;
+}
+
+.card3 {
+    background: linear-gradient(30deg, black, white);
+    border: solid;
+}
+
+.livros {
+    background-color: gray;
 }
