@@ -54,6 +54,60 @@
           </div>
         </div>
       </div>
+      <div id="liveToast" class="toast bottom-0 end-0 positio-relative" role="danger" aria-live="assertive"
+        aria-atomic="true">
+        <div class="toast-header bg-dark">
+          <strong class="me-auto text-white">ERRO!</strong>
+          <button type="button" class="btn-close bg-danger" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div id="mensagem" class="toast-body bg-dark text-red">
+
+        </div>
+      </div>
+
+      <h1 class="text-center font-size-titulo mt-5 texto-titulo" id="t-comentario">Deixe seu comentario </h1>
+
+      <div>
+        <form class="row g-3 forms" action="/salvar/comentario" method="post" onsubmit="return validar()">
+          <div class="col-12">
+            <label for="nome" class="form-label text">Nome</label>
+            <input type="text" name="nome" class="form-control" id="nome">
+          </div>
+          <div class="col-md-12">
+            <label for="email" class="form-label text">Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="conteudo" class="form-label text">Comentario</label>
+            <textarea class="form-control" id="conteudo" name="conteudo" id="exampleFormControlTextarea1"
+              rows="3"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary sub">Salvar</button>
+          </div>
+        </form>
+      </div>
+
+      <h1 class="text-center font-size-titulo texto-titulo p-5">Comentarios</h1>
+
+      <section class="secao-comentarios" id="secao-comentario">
+
+        {{#each comentarios}}
+
+        <div class="comentario">
+          <div class="comentario-titulo">
+            <h3>{{nome}}</h3>
+            <span id="data-comentario">{{dataentrada}}</span>
+          </div>
+          <div class="comentario-texto">
+            <p class="lh-1 text-break text-start">
+              {{conteudo}}
+            </p>
+          </div>
+        </div>
+
+        {{/each}}
+      </section>
     </div>
     <div class="col">
       <i>
@@ -61,6 +115,7 @@
       </i>
     </div>
   </div>
-</div>
 
+</div>
 <script src="/public/js/calculadora.js"></script>
+<script src="/public/js/validacao.js"></script>

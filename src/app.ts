@@ -29,6 +29,7 @@ export class App {
         this.server.use('/popperjs', express.static('./node_modules/@popperjs/core/dist/umd'));
         this.server.use('/hbs', express.static('./node_modules/handlebars/dist/'));
         this.server.use('/public', express.static(__dirname + "/app/public"));
+        this.server.use('/sql', express.static(__dirname + '/app/sql'));
 
         // configuração do bodyparse
         this.server.use(express.urlencoded({ extended: true }));
