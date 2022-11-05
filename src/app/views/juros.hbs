@@ -10,13 +10,16 @@
     </div>
     <div class="col-7">
       <h1 class="titulo">O que é Juros<a class="interrogacao">?</a></h1>
+
       <div class="conteudo barra">
+        <img src="/public/img/juros.jpeg" alt="O que são Juros?" class="img-fluid rounded">
         <h3>Conceito</h3>
         <p>Juros é uma porcentagem do valor de um dinheiro emprestado que é cobrada gradualmente sobre o valor total que
           é incrementado por parcela.</p>
         <p>Fazendo uma analogia simples, o juros é como se fosse o aluguel de um apartamento, onde o aluguel é o juros.
           Como resultado disso, devemos pagar todo mês para usar o apartamento de alguém ou podendo ocorrer o inverso
           também — no qual recebemos por emprestarmos o nosso apartamento para alguém e recebemos por isso.</p>
+
         <h3>Juros simples x Juros compostos</h3>
         <p>A diferença entre os dois está em que enquanto o juros simples atua sempre sobre o capital inicial, não
           existem juros sobre juros. Já o juros compostos é o que incide sempre sobre o montante do período anterior,
@@ -25,6 +28,7 @@
       </div>
       <div class="barra">
         <h1 class="titulo">Calculadora de Juros</h1>
+        <img src="/public/img/Simples-e-Composto.jpeg" alt="O que são Juros?" class="img-fluid rounded">
         <select class="form-select" id="tipo" aria-label="Default select example">
           <option value="1" selected>simples</option>
           <option value="2">composto</option>
@@ -65,49 +69,51 @@
         </div>
       </div>
 
-      <h1 class="text-center font-size-titulo mt-5 texto-titulo" id="t-comentario">Deixe seu comentario </h1>
+      <div class="barra">
+        <h1 class="text-center font-size-titulo mt-5 texto-titulo" id="t-comentario">Deixe seu comentario </h1>
 
-      <div>
-        <form class="row g-3 forms" action="/salvar/comentario" method="post" onsubmit="return validar()">
-          <div class="col-12">
-            <label for="nome" class="form-label text">Nome</label>
-            <input type="text" name="nome" class="form-control" id="nome">
-          </div>
-          <div class="col-md-12">
-            <label for="email" class="form-label text">Email</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="nome@exemplo.com">
-          </div>
-          <div class="mb-3">
-            <label for="conteudo" class="form-label text">Comentario</label>
-            <textarea class="form-control" id="conteudo" name="conteudo" id="exampleFormControlTextarea1"
-              rows="3"></textarea>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary sub">Salvar</button>
-          </div>
-        </form>
-      </div>
-
-      <h1 class="text-center font-size-titulo texto-titulo p-5">Comentarios</h1>
-
-      <section class="secao-comentarios" id="secao-comentario">
-
-        {{#each comentarios}}
-
-        <div class="comentario">
-          <div class="comentario-titulo">
-            <h3>{{nome}}</h3>
-            <span id="data-comentario">{{dataentrada}}</span>
-          </div>
-          <div class="comentario-texto">
-            <p class="lh-1 text-break text-start">
-              {{conteudo}}
-            </p>
-          </div>
+        <div>
+          <form class="row g-3 forms" action="/salvar/comentario" method="post" onsubmit="return validar()">
+            <div class="col-12">
+              <label for="nome" class="form-label text">Nome</label>
+              <input type="text" name="nome" class="form-control" id="nome">
+            </div>
+            <div class="col-md-12">
+              <label for="email" class="form-label text">Email</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+            </div>
+            <div class="mb-3">
+              <label for="conteudo" class="form-label text">Comentario</label>
+              <textarea class="form-control" id="conteudo" name="conteudo" id="exampleFormControlTextarea1"
+                rows="3"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary sub">Salvar</button>
+            </div>
+          </form>
         </div>
 
-        {{/each}}
-      </section>
+        <h1 class="text-center font-size-titulo texto-titulo p-5">Comentarios</h1>
+
+        <section class="secao-comentarios" id="secao-comentario">
+
+          {{#each comentarios}}
+
+          <div class="comentario">
+            <div class="comentario-titulo">
+              <h3>{{nome}}</h3>
+              <span id="data-comentario">{{dataentrada}}</span>
+            </div>
+            <div class="comentario-texto">
+              <p class="lh-1 text-break text-start">
+                {{conteudo}}
+              </p>
+            </div>
+          </div>
+
+          {{/each}}
+        </section>
+      </div>
     </div>
     <div class="col">
       <i>
