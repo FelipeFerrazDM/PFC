@@ -31,6 +31,10 @@ class ConteudoController {
     public contas(req: Request, res: Response) {
         return res.render("contas");
     }
+
+    public livros(req: Request, res: Response) {
+        return res.render("livros");
+    }
 }
 
 export const conteudoController = new ConteudoController();
