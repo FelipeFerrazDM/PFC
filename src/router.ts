@@ -12,6 +12,7 @@ router.get("/Conteudo/Juros", conteudoController.juros, contatoController1.conta
 router.get("/Conteudo/CreditoeDebito", conteudoController.creditoedebito);
 router.get("/Conteudo/Contas", conteudoController.contas);
 router.get("/Conteudo/Livros", conteudoController.livros);
+router.get("/Conteudo/Investimentos", conteudoController.Investimentos);
 /* router.post("/salvar/comentario", contatoController1.comentario) */
 
 export { router };

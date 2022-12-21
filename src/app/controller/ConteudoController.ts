@@ -35,6 +35,10 @@ class ConteudoController {
     public livros(req: Request, res: Response) {
         return res.render("livros");
     }
+
+    public Investimentos(req: Request, res: Response) {
+        return res.render("investimentos");
+    }
 }
 
 export const conteudoController = new ConteudoController();
