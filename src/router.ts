@@ -3,6 +3,7 @@ import { homeController } from "./app/controller/HomeController";
 import { quemSomosController } from "./app/controller/QuemSomosController";
 import { conteudoController } from "./app/controller/ConteudoController";
 import { contatoController1 } from "./app/controller/ContatoController1";
+import { sobreController } from "./app/controller/SobreController";
 
 const router: Router = Router()
 
@@ -13,6 +14,7 @@ router.get("/Conteudo/CreditoeDebito", conteudoController.creditoedebito);
 router.get("/Conteudo/Contas", conteudoController.contas);
 router.get("/Conteudo/Livros", conteudoController.livros);
 router.get("/Conteudo/Investimentos", conteudoController.Investimentos);
+router.get("/Sobre", sobreController.Sobre);
 /* router.post("/salvar/comentario", contatoController1.comentario) */
 
 export { router };

@@ -202,3 +202,17 @@
     margin-top: 2%;
 
 }
+
+.Site {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.textos {
+    font-size: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
